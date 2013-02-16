@@ -12,6 +12,7 @@ Mycarboncap::Application.routes.draw do
 
   match 'about' => 'static_pages#about'
   match 'help' => 'static_pages#help'
+  match 'landing' => 'static_pages#landing'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
@@ -55,7 +56,7 @@ Mycarboncap::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'static_pages#home'
+   root :to => 'static_pages#landing'
 
   # See how all your routes lay out with "rake routes"
 
