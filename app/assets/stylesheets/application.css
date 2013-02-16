@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+.homepageimg
+{
+  background-image:url(wind-home.jpg);
+  background-repeat:no-repeat;
+  height: 100%;
+  width: 100%;
+  background-color:#cccccc;
+}
