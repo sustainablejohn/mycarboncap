@@ -37,5 +37,7 @@ application.js: application-9a717ea62eac3463d689b2ba0a4e85b4.js
 application/index.js: application-9a717ea62eac3463d689b2ba0a4e85b4.js
 application.css: application-1e6f01f259b0eeea0ae8fd0fb728203a.css
 application/index.css: application-1e6f01f259b0eeea0ae8fd0fb728203a.css
+bootstrap.css: bootstrap-486d87b03e64faa268e6f2b313b24dab.css
+bootstrap/index.css: bootstrap-486d87b03e64faa268e6f2b313b24dab.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
