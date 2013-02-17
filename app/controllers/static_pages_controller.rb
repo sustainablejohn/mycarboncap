@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
   def landing 
-    @name = 'andrew'
     @background_css = 'wind-home'
+    @you_are_on_landing_page = true
   end
 
   def help
