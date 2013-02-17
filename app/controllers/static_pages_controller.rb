@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
-  def home
+  def landing 
     @name = 'andrew'
+    @background_css = 'class="wind-home"'
   end
 
   def help
