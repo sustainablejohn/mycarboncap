@@ -20,6 +20,9 @@ Mycarboncap::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+  # http://stackoverflow.com/questions/9148310/rails-3-2-1-heroku-asset-precompile-error
+  config.assets.precompile += %w( bootstrap.css )
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
