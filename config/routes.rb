@@ -13,6 +13,7 @@ Mycarboncap::Application.routes.draw do
   match 'about' => 'static_pages#about'
   match 'help' => 'static_pages#help'
   match 'landing' => 'static_pages#landing'
+  match 'home' => 'static_pages#home'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
