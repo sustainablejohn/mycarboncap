@@ -10,6 +10,7 @@ To bootstrap this application:
 * $ rvm list gemsets # should list "ruby-1.9.3-p385@mcc"
 * $ sudo apt-get install nodejs
 * $ sudo apt-get install libsqlite3-dev # might need this
+* $ rake assets:precompile
 * $ rails server
 
 Other stuff to install:
