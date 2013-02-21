@@ -15,6 +15,14 @@ To bootstrap this application:
 * $ rake db:migrate
 * $ rails server
 
+To push to heroku:
+One-time set up:
+* $ heroku config:add FACEBOOK_APP_ID='423043497780480'
+* $ heroku config:add FACEBOOK_SECRET='secret_facebook_secret' 
+
+Other Heroku setup:
+* $ heroku run rake db:migrate
+
 Other stuff to install:
 * $ sudo apt-get install vim
 
