@@ -17,3 +17,4 @@ rerun.txt
 pickle-email-*.html
 .project
 /config/local_env.yml
+*.swp
