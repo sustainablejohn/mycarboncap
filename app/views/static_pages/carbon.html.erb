@@ -29,10 +29,7 @@
     	<input type="text" placeholder="1234">
      </fieldset>
    </form>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-     <li><a tabindex="-1" href="#">miles</a></li>
-     <li><a tabindex="-1" href="#">km</a></li>
-   </ul>
+   <select><option>miles</option><option>km</option></select>
    <br></br>
    <p>Or manually enter the flights you've taken:</p>
    <div class = "container-fluid">
@@ -100,14 +97,59 @@
   </div>
   <div id="tabs-2">
    <p>Enter total distance you've driven this year:</p>
+   <form>
+     <fieldset>
+    	<input type="text" placeholder="1234">
+     </fieldset>
+   </form>
+   <select><option>miles</option><option>km</option></select>
    <br></br>
-   <p>Enter the fuel economy of your car:</p>
+   <p>Enter the fuel economy of your car in miles per gallon (mpg):</p>
+   <form>
+     <fieldset>
+    	<input type="text" placeholder="23">
+     </fieldset>
+   </form>
    <br></br>
    <p>Or select the type of car you drive:</p>
-  </div>
+   <select><option>Sedan</option><option>SUV</option><option>Sports car</option><option>Minivan</option><option>Pickup truck</option><option>Electric vehicle</option><option>Hybrid</option></select>
+   <br></br>
+    <a href="#tabs-3" class="btn btn-large btn-primary">Next: home energy</a>
+ </div>
   <div id="tabs-3">
-   <p></p>
+  <form>
+    <fieldset>
+	<label>How many people live in your house or apartment?</label>
+	<input type="text" placeholder="4">
+    </fieldset>
+  </form>
+  <p>Option 1: Enter specific information about your electric bill:</p>
+   <form>
+     <fieldset>
+	<label>Electricity usage in kilowatt hours</label>
+    	<input type="text" placeholder="123">
+	<label>Gas usage in therms</label>
+	<input type="text" placeholder="1000">
+     </fieldset>
+   </form>
+   <br></br>
+   <p>Option 2: Enter general information about the type of home or apartment you live in:</p>
+	<%= check_box_tag(:home) %>
+	<%= label_tag(:home, "Home") %>
+	<%= check_box_tag(:apartment) %>
+	<%= label_tag(:apartment, "Apartment") %>
+   <br></br> 
+   <form>
+     <fieldset>
+	<label>Number of bedrooms in your home or apartment</label>
+    	<input type="text" placeholder="123">
+     </fieldset>
+   </form>
+    <a href="#tabs-3" class="btn btn-large btn-primary">Your carbon footprint</a>
   </div>
+</div>
+<div>
+  <h3>Your carbon footprint is:</h3>
 </div>
 </body>
 </html>
