@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Tabs - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1"><%=image_tag "air.jpg"%>Flights</a></li>
+    <li><a href="#tabs-2"><%=image_tag "car.jpg"%>Car travel</a></li>
+    <li><a href="#tabs-3"><%=image_tag "home.jpg"%>Home energy</a></li>
+  </ul>
+  <div id="tabs-1">
+   <p>Enter total distance you've flown this year:</p>
+   <form>
+     <fieldset>
+    	<input type="text" placeholder="1234">
+     </fieldset>
+   </form>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+     <li><a tabindex="-1" href="#">miles</a></li>
+     <li><a tabindex="-1" href="#">km</a></li>
+   </ul>
+   <br></br>
+   <p>Or manually enter the flights you've taken:</p>
+   <div class = "container-fluid">
+	<div class = "row-fluid">
+		<div class = "span2">
+			<h4>Origin</h4>
+			<br>
+			<h4>Destination</h4>
+			<br>
+			<h4>Flight type</h4>
+			<br>
+		</div>
+		<div class = "span3">
+		  <form>
+			<fieldset>
+    	                  <input type="text" placeholder="EWR">
+			</fieldset>
+		  </form>
+		  <form>
+			<fieldset>
+    	                  <input type="text" placeholder="SFO">
+			</fieldset>
+		  </form>
+		   <%= check_box_tag(:one_way) %>
+		   <%= label_tag(:one_way, "One way") %>
+		   <%= check_box_tag(:round_trip) %>
+		   <%= label_tag(:round_trip, "Round trip") %>
+		</div>
+		<div class = "span3">
+		  <form>
+			<fieldset>
+    	                  <input type="text">
+			</fieldset>
+		  </form>
+		  <form>
+			<fieldset>
+    	                  <input type="text">
+			</fieldset>
+		  </form>
+		   <%= check_box_tag(:one_way) %>
+		   <%= label_tag(:one_way, "One way") %>
+		   <%= check_box_tag(:round_trip) %>
+		   <%= label_tag(:round_trip, "Round trip") %>
+		</div>
+		<div class = "span3">
+		  <form>
+			<fieldset>
+    	                  <input type="text">
+			</fieldset>
+		  </form>
+		  <form>
+			<fieldset>
+    	                  <input type="text">
+			</fieldset>
+		  </form>
+		   <%= check_box_tag(:one_way) %>
+		   <%= label_tag(:one_way, "One way") %>
+		   <%= check_box_tag(:round_trip) %>
+		   <%= label_tag(:round_trip, "Round trip") %>
+		</div>
+	</div>
+   </div>
+  <p><button class="btn btn-primary" type="button">Add more flights</button></p>
+  <a href="#tabs-2" class="btn btn-large btn-primary">Next: car travel</a>
+  </div>
+  <div id="tabs-2">
+   <p>Enter total distance you've driven this year:</p>
+   <br></br>
+   <p>Enter the fuel economy of your car:</p>
+   <br></br>
+   <p>Or select the type of car you drive:</p>
+  </div>
+  <div id="tabs-3">
+   <p></p>
+  </div>
+</div>
+</body>
+</html>

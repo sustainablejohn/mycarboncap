@@ -8,6 +8,13 @@ class StaticPagesController < ApplicationController
   end
 
   def home
+    def name(name)
+      return "My name is " + name
+    end
+    @name = name('Susty')
+  end
+
+  def carbon
   end
 
   def about
