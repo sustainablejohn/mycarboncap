@@ -11,7 +11,13 @@ To bootstrap this application:
 * $ sudo apt-get install nodejs
 * $ sudo apt-get install libsqlite3-dev # might need this
 * $ rake assets:precompile
+* $ bundle install
+* $ rake db:migrate
 * $ rails server
 
 Other stuff to install:
 * $ sudo apt-get install vim
+
+Stuff to refresh:
+* ||=
+* tap method

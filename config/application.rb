@@ -59,5 +59,16 @@ module Mycarboncap
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
     config.assets.initialize_on_precompile = false
+    # The following code is from 'option 3' of the following blog post
+    # about setting environment variables:
+    # http://railsapps.github.com/rails-environment-variables.html
+    # I added this in response to the Railscast episdoe on FB login:
+    # http://railscasts.com/episodes/360-facebook-authentication?view=asciicast
+    config.before_configuration do
+      env_file = File.join(Rails.root, 'config', 'local_env.yml')
+      YAML.load(File.open(env_file)).each do |key, value|
+        ENV[key.to_s] = value 
+      end if File.exists?(env_file)
+    end
   end
 end
