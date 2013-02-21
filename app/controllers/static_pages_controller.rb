@@ -7,6 +7,9 @@ class StaticPagesController < ApplicationController
   def help
   end
 
+  def channel 
+  end
+
   def home
     def name(name)
       return "My name is " + name

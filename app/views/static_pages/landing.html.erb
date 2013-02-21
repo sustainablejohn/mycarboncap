@@ -1,7 +1,15 @@
 <div class="homepageimg"> 
-<br></br>
-<h1 class="landing-main">my carbon cap</h1>
-<h3 class="landing-main">take on your carbon footprint</h3>
-<br></br>
-<img src="http://www.bebo.com/img/facebook-login.png" style="float:right" hspace="170"/>
-</div>
+  <div id="user_nav">
+    <% if current_user %>
+      Signed in as <strong><%= current_user.name %></strong>!
+      <%= link_to "Sign out", signout_path, id: "sign_out" %>
+    <% else %>
+      <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+    <% end %>
+  </div>  
+  <br></br>
+  <h1 class="landing-main">my carbon cap</h1>
+  <h3 class="landing-main">take on your carbon footprint</h3>
+  <br></br>
+  <img src="http://www.bebo.com/img/facebook-login.png" style="float:right" hspace="170" id="fb_login_button"/>
+</div><!-- homepageimg -->
