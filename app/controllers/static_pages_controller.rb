@@ -7,6 +7,9 @@ class StaticPagesController < ApplicationController
   def help
   end
 
+  def channel 
+  end
+
   def home
   end
 

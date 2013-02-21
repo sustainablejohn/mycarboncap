@@ -23,6 +23,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'omniauth-facebook', '1.4.0' # Downgrade from 1.4.1 to avoid some bug:
+# http://stackoverflow.com/questions/11597130/omniauth-facebook-keeps-reporting-invalid-credentials
 
 group :production do
   gem 'pg'

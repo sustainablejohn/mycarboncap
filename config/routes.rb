@@ -1,4 +1,9 @@
 Mycarboncap::Application.routes.draw do
+  get "sessions/create"
+  match 'auth/:provider/callback', to: 'sessions#create'
+  match 'auth/failure', to: redirect('/')
+  match 'signout', to: 'sessions#destroy', as: 'signout'
+
   #get "static_pages/home"
   #get "static_pages/help"
   #get "static_pages/about"
@@ -14,6 +19,7 @@ Mycarboncap::Application.routes.draw do
   match 'help' => 'static_pages#help'
   match 'landing' => 'static_pages#landing'
   match 'home' => 'static_pages#home'
+  match 'channel' => 'static_pages#channel'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
