@@ -20,6 +20,7 @@ Mycarboncap::Application.routes.draw do
   match 'landing' => 'static_pages#landing'
   match 'home' => 'static_pages#home'
   match 'carbon' => 'static_pages#carbon'
+  match 'feed' => 'static_pages#feed'
 
   match 'channel' => 'static_pages#channel'
 
