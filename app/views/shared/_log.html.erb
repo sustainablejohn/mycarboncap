@@ -1,13 +1,16 @@
-<div>
-  <h3>Your carbon footprint is:</h3>
-</div>
-
-<div>
-  <%=render "shared/trips" %>
-</div>
-<div>
-  <%=render "shared/homeenergy" %>
-</div>
-<div>
-<%=render "shared/commute" %>
-</div>
+<div id="tabs"> 
+  <ul> 
+    <li><a href="#tabs-1">Flights</a></li> 
+    <li><a href="#tabs-2">Car travel</a></li> 
+    <li><a href="#tabs-3">Home energy</a></li> 
+  </ul> 
+  <div id="tabs-1">
+    <%=render "shared/trips" %>
+  </div><!--tabs-1-->
+  <div id="tabs-2">
+    <%=render "shared/commute" %>
+  </div><!--tabs-2-->
+  <div id="tabs-3">
+    <%=render "shared/home_energy" %>
+  </div><!--tabs-3-->
+</div><!--tabs-->
