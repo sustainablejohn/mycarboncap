@@ -8,7 +8,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="container <%= @background_css %>">
-  <%= render 'shared/navbar' unless @you_are_on_landing_page %>
+    <%= render 'shared/navbar' unless @you_are_on_landing_page %>
   <%= yield %>
 </body>
 </html>

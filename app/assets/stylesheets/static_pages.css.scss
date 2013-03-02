@@ -12,6 +12,10 @@ $light_gray: #F2F2F2;
 h1 {color: $dark_green;}
 body {background-color: $light_gray; }
 
+#carbonbar img {
+  height: 30px;
+}
+
 #badge {
   border-style: solid;
   border-radius: 15px;
