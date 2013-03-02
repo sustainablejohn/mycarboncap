@@ -1,7 +1,18 @@
 <div id='carbonbar'>
-  <div class="span4"><%= image_tag("carbon-cap-logo.png") %></div>
-  <div class="span2"><%= image_tag("log_icon.png") %>Log</div>
-  <div class="span2"><%= image_tag("compare_icon.png") %>Compare</div>
-  <div class="span2"><%= image_tag("compare_icon.png") %>Cap</div>
+  <div class="span4">
+    <%= link_to(image_tag("carbon-cap-logo.png"), feed_path) %>
+  </div>
+  <div class="span2">
+    <%= link_to(image_tag("log_icon.png"), log_path) %>
+    <%= link_to("Log", log_path) %>
+  </div>
+  <div class="span2">
+    <%= link_to(image_tag("compare_icon.png"), compare_path) %>
+    <%= link_to("Compare", compare_path) %>
+  </div>
+  <div class="span2">
+    <%= link_to(image_tag("compare_icon.png"), cap_path) %>
+    <%= link_to("Cap", cap_path) %>
+  </div>
   <div class="span1"><%= image_tag("notifications_icon.png") %></div>
 </div>
