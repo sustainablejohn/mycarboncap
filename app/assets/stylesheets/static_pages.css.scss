@@ -13,3 +13,20 @@ $gray: #8C8B79;
 $light_gray: #F2F2F2;
 h1 {color: $dark_green;}
 body {background-color: $light_gray; }
+
+#badge {
+  border-style: solid;
+  border-color: $dark_green;
+}
+#suggestion{
+  border-style: solid;
+  border-color: $dark_green;
+}
+#friends{
+  border-style: solid;
+  border-color: $dark_green;
+}
+
+#badge + img, h2 {
+  display: inline;
+}
