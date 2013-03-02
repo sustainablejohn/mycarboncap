@@ -1,70 +1,74 @@
 <div id="trips">
-   <p>Enter total distance you've flown this year:</p>
-   <form>
-     <fieldset>
-    	<input type="text" placeholder="1234">
-     </fieldset>
-   </form>
-   <select><option>miles</option><option>km</option></select>
-   <br></br>
-   <p>Or manually enter the flights you've taken:</p>
-<div class = "container-fluid">
-	<div class = "row-fluid">
-		<div class = "span2">
-			<h4>Origin</h4>
-			<br>
-			<h4>Destination</h4>
-			<br>
-			<h4>Flight type</h4>
-			<br>
-		</div>
-		<div class = "span3">
-		  <form>
-			<fieldset>
-    	                  <input type="text" placeholder="EWR">
-			</fieldset>
-		  </form>
-		  <form>
-			<fieldset>
-    	                  <input type="text" placeholder="SFO">
-			</fieldset>
-		  </form>
-		   <%= check_box_tag(:one_way) %>
-		   <%= label_tag(:one_way, "One way") %>
-		   <%= check_box_tag(:round_trip) %>
-		   <%= label_tag(:round_trip, "Round trip") %>
-		</div>
-		<div class = "span3">
-		  <form>
-			<fieldset>
-    	    <input type="text">
-			</fieldset>
-		  </form>
-		  <form>
-			<fieldset>
-    	    <input type="text">
-			</fieldset>
-		  </form>
-		   <%= check_box_tag(:one_way) %>
-		   <%= label_tag(:one_way, "One way") %>
-		   <%= check_box_tag(:round_trip) %>
-		   <%= label_tag(:round_trip, "Round trip") %>
-		</div>
-		<div class = "span3">
-		  <form>
-			<fieldset>
-    	    <input type="text">
-			</fieldset>
-		  </form>
-		  <form>
-			<fieldset>
-    	    <input type="text">
-			</fieldset>
-		  </form>
-		   <%= check_box_tag(:one_way) %>
-		   <%= label_tag(:one_way, "One way") %>
-		   <%= check_box_tag(:round_trip) %>
-		   <%= label_tag(:round_trip, "Round trip") %>
-		</div>
-	</div>
-</div>
+  <p>Enter total distance you've flown this year:</p>
+  <form>
+    <fieldset>
+ 	    <input type="text" placeholder="1234">
+    </fieldset>
+  </form>
+  <select>
+    <option>miles</option>
+    <option>km</option>
+  </select>
+  <br></br>
+  <p>Or manually enter the flights you've taken:</p>
+  <div class = "container-fluid">
+    <div class = "row-fluid">
+      <div class = "span2">
+        <h4>Origin</h4>
+        <br>
+        <h4>Destination</h4>
+        <br>
+        <h4>Flight type</h4>
+        <br>
+      </div><!--span2-->
+      <div class = "span3">
+        <form>
+          <fieldset>
+            <input type="text" placeholder="EWR">
+          </fieldset>
+        </form>
+        <form>
+          <fieldset>
+            <input type="text" placeholder="SFO">
+          </fieldset>
+        </form>
+        <%= check_box_tag(:one_way) %>
+        <%= label_tag(:one_way, "One way") %>
+        <%= check_box_tag(:round_trip) %>
+        <%= label_tag(:round_trip, "Round trip") %>
+      </div><!--span3-->
+      <div class = "span3">
+        <form>
+          <fieldset>
+              <input type="text">
+          </fieldset>
+        </form>
+        <form>
+          <fieldset>
+              <input type="text">
+          </fieldset>
+        </form>
+        <%= check_box_tag(:one_way) %>
+        <%= label_tag(:one_way, "One way") %>
+        <%= check_box_tag(:round_trip) %>
+        <%= label_tag(:round_trip, "Round trip") %>
+      </div><!--span3-->
+      <div class = "span3">
+        <form>
+          <fieldset>
+              <input type="text">
+          </fieldset>
+        </form>
+        <form>
+          <fieldset>
+              <input type="text">
+          </fieldset>
+        </form>
+        <%= check_box_tag(:one_way) %>
+        <%= label_tag(:one_way, "One way") %>
+        <%= check_box_tag(:round_trip) %>
+        <%= label_tag(:round_trip, "Round trip") %>
+      </div><!--span3-->
+    </div><!--row-fluid-->
+  </div><!--container-fluid-->
+</div><!--trips-->

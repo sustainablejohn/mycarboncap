@@ -6,6 +6,16 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <!--TODO: make these into Rails tags; -->
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+  <!--TODO: put this in a separate js file-->
+  <script>
+    $(function() {
+      $( "#tabs" ).tabs();
+    });
+  </script>
 </head>
 <body class="container <%= @background_css %>">
   <div id="topbar">
