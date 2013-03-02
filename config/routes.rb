@@ -22,6 +22,7 @@ Mycarboncap::Application.routes.draw do
   match 'carbon' => 'static_pages#carbon'
   match 'feed' => 'static_pages#feed'
   match 'log' => 'static_pages#log'
+  match 'cap' => 'static_pages#cap'
   
   match 'channel' => 'static_pages#channel'
 
