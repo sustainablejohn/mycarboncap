@@ -20,6 +20,9 @@ class StaticPagesController < ApplicationController
   def carbon
   end
 
+  def feed 
+  end
+
   def about
   end
 
