@@ -2,15 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-$light_blue: #D0D9D1;
-
-h1 {color: $light_blue;}
-// Recht associates:
+// Recht associates colors:
 $light_blue: #D0D9D1;
 $dark_green: #7EA67C;
 $light_green: #A0BF9F;
-$gray: #8C8B79;
+$dark_gray: #8C8B79;
 $light_gray: #F2F2F2;
+
 h1 {color: $dark_green;}
 body {background-color: $light_gray; }
 
@@ -18,15 +16,24 @@ body {background-color: $light_gray; }
   border-style: solid;
   border-color: $dark_green;
 }
+
+#badge + img, h3 {
+  display: inline;
+}
+
+#badge .span4 {
+  text-align: center;
+  border-style: solid;
+  border-color: $dark_gray;
+}
+
 #suggestion{
   border-style: solid;
   border-color: $dark_green;
+  margin-top: 3em;
 }
+
 #friends{
   border-style: solid;
   border-color: $dark_green;
-}
-
-#badge + img, h2 {
-  display: inline;
 }
