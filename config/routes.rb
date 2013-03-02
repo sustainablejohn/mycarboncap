@@ -23,6 +23,7 @@ Mycarboncap::Application.routes.draw do
   match 'feed' => 'static_pages#feed'
   match 'log' => 'static_pages#log'
   match 'cap' => 'static_pages#cap'
+  match 'compare' => 'static_pages#compare'
   
   match 'channel' => 'static_pages#channel'
 
