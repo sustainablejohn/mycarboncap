@@ -29,6 +29,9 @@ class StaticPagesController < ApplicationController
   end
 
   def feed 
+    @top_left_partial = 'shared/badge'
+    @bottom_left_partial = "shared/suggestion"
+    @main_partial = "shared/feed"
   end
 
   def about
