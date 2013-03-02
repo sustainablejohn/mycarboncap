@@ -21,7 +21,8 @@ Mycarboncap::Application.routes.draw do
   match 'home' => 'static_pages#home'
   match 'carbon' => 'static_pages#carbon'
   match 'feed' => 'static_pages#feed'
-
+  match 'log' => 'static_pages#log'
+  
   match 'channel' => 'static_pages#channel'
 
   # Sample of named route:
