@@ -21,6 +21,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'bootstrap-sass', '~>2.3.0.1'
 gem 'jquery-rails'
 gem 'omniauth-facebook', '1.4.0' # Downgrade from 1.4.1 to avoid some bug:
 # http://stackoverflow.com/questions/11597130/omniauth-facebook-keeps-reporting-invalid-credentials
