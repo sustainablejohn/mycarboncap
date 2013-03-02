@@ -1,17 +1,17 @@
-<div class = "container-fluid">
-	<div class = "row-fluid">
-		<div class = "span4">
-			<div id='badge'>
-        <%=render "shared/badge"%>
-      </div><!--badge-->
-      <div id='suggestion'>
-        <%=render "shared/suggestion"%>
-      </div><!--suggestion-->
-		</div>
-		<div class="span8">
-      <div id='friends'>
-        <%=render "shared/friends"%>
-      </div><!-- friends-->
-		</div>
-	</div><!-- row-fluid-->
-</div><!-- container-fluid -->
+<% content_for :top_left_content do %>
+  <div id='badge'>
+    <%=render "shared/badge"%>
+  </div><!--badge-->
+<% end %>
+
+<% content_for :bottom_left_content do %>
+  <div id='suggestion'>
+    <%=render "shared/suggestion"%>
+  </div><!--suggestion-->
+<% end %>
+
+<% content_for :main_content do %>
+  <div id='friends'>
+    <%=render "shared/friends"%>
+  </div><!-- friends-->
+<% end %>

@@ -8,7 +8,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="container <%= @background_css %>">
+  <div id="topbar">
     <%= render 'shared/navbar' unless @you_are_on_landing_page %>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span4"><!--left column -->
+        <div id="top-left-content">
+          <%= yield :top_left_content %>
+        </div>
+        <div id="bottom_left_content">
+          <%= yield :bottom_left_content %>
+        </div>
+      </div><!--left column-->
+      <div class="span8" id="main_content"><!--main column -->
+        <%= yield :main_content %>
+      </div><!--main column-->
+    </div><!--row-fluid-->
+  </div><!--container-fluid-->
+  <!-- Now yield anything left over, e.g. landing page stuff-->
   <%= yield %>
 </body>
 </html>
