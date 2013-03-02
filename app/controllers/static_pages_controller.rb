@@ -28,6 +28,9 @@ class StaticPagesController < ApplicationController
    end	
   end
 
+  def feed 
+  end
+
   def about
   end
 
