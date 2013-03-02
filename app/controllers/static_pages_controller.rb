@@ -18,6 +18,14 @@ class StaticPagesController < ApplicationController
   end
 
   def carbon
+    def flight_miles(distance,metric)
+    	if metric=="miles"
+		factor=1.5
+	else
+		factor=1.2
+ 	return distance*factor
+    end
+   end	
   end
 
   def about
