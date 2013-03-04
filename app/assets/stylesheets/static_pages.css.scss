@@ -52,6 +52,13 @@ body {background-color: $light_gray; }
   border-color: $dark_green;
 }
 
+.activity-unit {
+  margin-top: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: $light_green;
+}
+
 #facebook .connecting_flights_link {
   color: blue;
   font-size: small;
