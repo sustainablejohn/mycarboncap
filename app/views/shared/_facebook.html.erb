@@ -1,0 +1,43 @@
+<div id="facebook">
+  <div class = "container-fluid">
+    <div class = "row-fluid">
+      <div class = "span8">
+        <%= image_tag('vacation.jpg', :size => "300x400", :class => 'img-polaroid') %>
+      </div>
+      <div class = "span4">
+        <dl>
+          <dt>Photo Location:</dt>
+          <dd>Mozambique</dd>
+          <dt>Photo Date:</dt>
+          <dd>July 19, 2012</dd>
+          <dt>Friends:</dt>
+          <dd>Jama Joy Bernard</dd>
+        </dl>
+      </div>
+    </div><!--row-fluid-->
+  </div><!--container-fluid-->
+  <p>You took a trip to Mozambique with Jama Joy Bernard! Did you fly from San Francisco International Airport? If the information below is correct, click on Submit and we'll add this to your activity log.</p>
+  <div class = "container-fluid">
+    <div class = "row-fluid">
+      <form>
+        <div class = "span8">
+          <fieldset>
+            <label>Origin Airport:</label>
+            <input type="text" placeholder="SFO San Francisco Int'l Airtport">
+            <br /><%= link_to("Click to add connecting flights", "#", :class => 'connecting_flights_link') %><br />
+            <label>Destination Airport:</label>
+            <input type="text" placeholder="MPM Maputo Int'l Airport">
+          </fieldset>
+        </div><!--span8-->
+        <div class="span4">
+            <%= radio_button_tag(:flight_trip_type, "Oneway") %>
+            <%= label_tag(:one_way, "One way") %>
+            <%= radio_button_tag(:flight_trip_type, "Roundtrip") %>
+            <%= label_tag(:round_trip, "Round trip") %>
+            <br />
+            <%= submit_tag("Log this activity") %>
+        </div><!--span4"-->
+      </div><!--row-fluid-->
+    </form>
+  </div><!--container-fluid-->
+</div><!--trips-->
