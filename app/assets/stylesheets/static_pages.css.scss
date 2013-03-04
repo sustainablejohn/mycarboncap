@@ -54,6 +54,20 @@ body {background-color: $light_gray; }
   color: blue;
   font-size: small;
 }
+
 #tabs div {
   background-color: $light_blue;
   }
+
+#tabs img{
+  margin-top: 5px;
+  margin-right: 5px;
+  }
+
+#suggestion li {
+  margin-top: 20px;
+}
+
+a {
+  color: $dark_gray;
+}

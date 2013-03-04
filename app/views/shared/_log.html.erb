@@ -1,9 +1,9 @@
 <div id="tabs"> 
   <ul> 
-    <li><a href="#tabs-1">Trips</a></li> 
-    <li><a href="#tabs-2">Commute</a></li> 
-    <li><a href="#tabs-3">Home Energy</a></li> 
-    <li><a href="#tabs-4">Facebook Activity</a></li> 
+    <li><a href="#tabs-1">Trips</a><%= image_tag("plane.png", :size=>"25x25") %></li> 
+    <li><a href="#tabs-2">Commute</a><%= image_tag("car_icon_short.png", :size=>"30x30") %></li> 
+    <li><a href="#tabs-3">Home</a><%= image_tag("house_icon.png", :size=>"25x25") %></li> 
+    <li><a href="#tabs-4">Facebook Activity</a><%= image_tag("logo_facebook.png", :size=>"25x25") %></li> 
   </ul> 
   <div id="tabs-1">
     <%=render "shared/trips" %>
