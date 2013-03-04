@@ -14,6 +14,8 @@ body {background-color: $light_gray; }
 
 #carbonbar img {
   height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #badge {
@@ -70,4 +72,10 @@ body {background-color: $light_gray; }
 
 a {
   color: $dark_gray;
+}
+
+#compare img {
+  border-style: solid;
+  border-radius: 15px;
+  background-color: $light_gray;
 }
