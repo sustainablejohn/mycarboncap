@@ -13,7 +13,7 @@ h1 {color: $dark_green;}
 body {background-color: $light_gray; }
 
 #carbonbar img {
-  height: 30px;
+  height: 50px;
 }
 
 #badge {
@@ -49,3 +49,11 @@ body {background-color: $light_gray; }
   border-style: solid;
   border-color: $dark_green;
 }
+
+#facebook .connecting_flights_link {
+  color: blue;
+  font-size: small;
+}
+#tabs div {
+  background-color: $light_blue;
+  }
