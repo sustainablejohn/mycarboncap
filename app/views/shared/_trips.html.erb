@@ -1,74 +1,34 @@
 <div id="trips">
-  <p>Enter total distance you've flown this year:</p>
-  <form>
-    <fieldset>
- 	    <input type="text" placeholder="1234">
-    </fieldset>
-  </form>
-  <select>
-    <option>miles</option>
-    <option>km</option>
-  </select>
-  <br></br>
-  <p>Or manually enter the flights you've taken:</p>
+  <p>This year, you've flown a total of <strong>11,531 miles</strong>, and driven <strong>2,188 miles</strong> on road trips.</p>
+  <p>Enter new flights or car trips below.</p>
+  <p>Enter a new flight:</p>
   <div class = "container-fluid">
     <div class = "row-fluid">
-      <div class = "span2">
-        <h4>Origin</h4>
-        <br>
-        <h4>Destination</h4>
-        <br>
-        <h4>Flight type</h4>
-        <br>
-      </div><!--span2-->
-      <div class = "span3">
-        <form>
+      <form>
+        <div class = "span8">
           <fieldset>
+            <label>Origin Airport:</label>
             <input type="text" placeholder="EWR">
-          </fieldset>
-        </form>
-        <form>
-          <fieldset>
+            <label>Destination Airport:</label>
             <input type="text" placeholder="SFO">
           </fieldset>
-        </form>
-        <%= check_box_tag(:one_way) %>
-        <%= label_tag(:one_way, "One way") %>
-        <%= check_box_tag(:round_trip) %>
-        <%= label_tag(:round_trip, "Round trip") %>
-      </div><!--span3-->
-      <div class = "span3">
-        <form>
-          <fieldset>
-              <input type="text">
-          </fieldset>
-        </form>
-        <form>
-          <fieldset>
-              <input type="text">
-          </fieldset>
-        </form>
-        <%= check_box_tag(:one_way) %>
-        <%= label_tag(:one_way, "One way") %>
-        <%= check_box_tag(:round_trip) %>
-        <%= label_tag(:round_trip, "Round trip") %>
-      </div><!--span3-->
-      <div class = "span3">
-        <form>
-          <fieldset>
-              <input type="text">
-          </fieldset>
-        </form>
-        <form>
-          <fieldset>
-              <input type="text">
-          </fieldset>
-        </form>
-        <%= check_box_tag(:one_way) %>
-        <%= label_tag(:one_way, "One way") %>
-        <%= check_box_tag(:round_trip) %>
-        <%= label_tag(:round_trip, "Round trip") %>
-      </div><!--span3-->
-    </div><!--row-fluid-->
+        </div><!--span8-->
+        <div class="span4">
+            <%= radio_button_tag(:flight_trip_type, "Oneway") %>
+            <%= label_tag(:one_way, "One way") %>
+            <%= radio_button_tag(:flight_trip_type, "Roundtrip") %>
+            <%= label_tag(:round_trip, "Round trip") %>
+            <%= submit_tag("Submit this flight") %>
+        </div><!--span4"-->
+      </div><!--row-fluid-->
+    </form>
+    <p>Take a recent road trip? Enter it below. For multi-stage trips, just enter one leg at a time.</p>
+    <form>
+      <label>Origin city:</label>
+      <input type='text' placeholder="Portland, OR">
+      <label>Destination city:</label>
+      <input type='text' placeholder="Glacier National Park, MT">
+      <%= submit_tag("Submit this road trip") %>
+    </form>
   </div><!--container-fluid-->
 </div><!--trips-->
