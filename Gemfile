@@ -6,7 +6,6 @@ gem 'rails', '3.2.11'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-  gem 'thin'
   gem 'sqlite3'
 end
 
@@ -22,6 +21,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'thin'
 gem 'bootstrap-sass', '~>2.3.0.1'
 gem 'jquery-rails'
 gem 'omniauth-facebook', '1.4.0' # Downgrade from 1.4.1 to avoid some bug:
