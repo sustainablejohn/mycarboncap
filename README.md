@@ -29,3 +29,11 @@ Other stuff to install:
 Stuff to refresh:
 * ||=
 * tap method
+
+# API notes:
+## Twitter:
+- Can access geolocations for any user; do not need user-specific oauth (though might be nice for privacy/security)
+- Very few people regularly use locations on Twitter, including many power users
+## Instagram:
+
+## Facebook:
