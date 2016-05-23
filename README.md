@@ -30,10 +30,45 @@ Stuff to refresh:
 * ||=
 * tap method
 
-# API notes:
-## Twitter:
-- Can access geolocations for any user; do not need user-specific oauth (though might be nice for privacy/security)
-- Very few people regularly use locations on Twitter, including many power users
-## Instagram:
+# Spring 2016 Implementation Notes:
 
-## Facebook:
+## Desired Website Layout:
+- Homepage:
+  - Sign up with TripIt account
+  - No TripIt account? Enter address and we'll keep you posted
+- Sign up page: Pull TripIt data, display amount traveled that year, and take contact info and credit card info.
+- About carbon offsets/how it works
+- FAQ
+
+## Tringas suggested workflow:
+- Data options: Uber app, skymiles account, citymapper app
+- Tripit "Connections"
+- Squarespace for landingpage
+- Wufoo form for basic account information
+- Wufoo-> Stripe integration with subscription
+- Zapier to link Wufoo form to Asana, Trello, or other task manager
+- Create monthly task; manually process and send out emails. Should be pretty minimal work
+
+Would like:
+- Landing page with "sign up"
+- Sign up takes TripIt account name, email address, and credit card info (to Stripe)
+- Credit card info is used to create a Stripe customer account, but not to create a charge (yet).
+- Charges would be created manually from the Stripe dashboard once the user has gotten connected with the Tripit account. 
+
+**NOTES FROM TRINGAS INTEGRATION:**
+Wufoo payments with Stripe requires that a payment be processed in order for Wufoo to process the payment (shows non-optional payment summary box). Not great.  Also, Wufoo recurring payments works only for fixed recurring amounts, not flexible amounts (same as Stripe subscriptions).
+
+##API notes:
+
+### Twitter:
+- Can access geolocations for any user; do not need user-specific oauth (though might be nice for privacy/security)
+- Very few people regularly use locations on Twitter, including many power users. Estimated ~3% of tweets have geodata- not sure how statistically significant this is?
+
+### Instagram:
+- Need oauth callback address
+
+### Facebook:
+
+### Google Maps:
+
+### TripIt
